@@ -21,11 +21,11 @@ def process_workbook(file_name):
 
     chart = BarChart()
     chart.add_data(values)
-    chart.title = 'Total Contributions'
+    chart.title = 'Contributions'
     sheet.add_chart(chart, 'g2')
 
     #Make the Header Row bold and change its color
-    font_style = Font(bold=True, color='ff7e67')
+    font_style = Font(bold=True, color='ff5334')
 
     for cell in sheet[1]:
         cell.font = font_style
